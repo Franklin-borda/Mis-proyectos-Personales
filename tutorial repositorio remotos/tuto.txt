@@ -1,0 +1,117 @@
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/51932/Desktop/portafolio/.git/
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        logo.svg
+        public/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git add -A
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'logo.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles/index.css', LF will be replaced by CRLF the next time Git touches it
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   logo.svg
+        new file:   public/assets/icons/.gitkeep
+        new file:   public/assets/imgs/abstract-background-canvas-code.jpg
+        new file:   public/assets/imgs/img-backend-0.png
+        new file:   public/assets/imgs/img-backend-1.png
+        new file:   public/assets/imgs/img-backend-2.png
+        new file:   public/assets/imgs/img-blog-nvm-medium.jpg
+        new file:   public/assets/imgs/img-blog-nvm.jpg
+        new file:   public/assets/imgs/img-frontend-0-medium.png
+        new file:   public/assets/imgs/img-frontend-0-small.jpg
+        new file:   public/assets/imgs/img-frontend-0.png
+        new file:   public/assets/imgs/img-portfolio-medium.png
+        new file:   public/assets/imgs/img-portfolio-small.png
+        new file:   public/assets/imgs/img-portfolio.png
+        new file:   public/assets/imgs/profile.jpeg
+        new file:   src/data/MOCKDATA.js
+        new file:   src/index.js
+        new file:   src/router/.gitkeep
+        new file:   src/styles/index.css
+        new file:   src/utils/.gitkeep
+        new file:   src/utils/about-section.js
+        new file:   src/utils/projects-section.js
+
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git commit -m "Primer commit"
+[master (root-commit) b7b529c] Primer commit
+ 23 files changed, 1554 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 logo.svg
+ create mode 100644 public/assets/icons/.gitkeep
+ create mode 100644 public/assets/imgs/abstract-background-canvas-code.jpg
+ create mode 100644 public/assets/imgs/img-backend-0.png
+ create mode 100644 public/assets/imgs/img-backend-1.png
+ create mode 100644 public/assets/imgs/img-backend-2.png
+ create mode 100644 public/assets/imgs/img-blog-nvm-medium.jpg
+ create mode 100644 public/assets/imgs/img-blog-nvm.jpg
+ create mode 100644 public/assets/imgs/img-frontend-0-medium.png
+ create mode 100644 public/assets/imgs/img-frontend-0-small.jpg
+ create mode 100644 public/assets/imgs/img-frontend-0.png
+ create mode 100644 public/assets/imgs/img-portfolio-medium.png
+ create mode 100644 public/assets/imgs/img-portfolio-small.png
+ create mode 100644 public/assets/imgs/img-portfolio.png
+ create mode 100644 public/assets/imgs/profile.jpeg
+ create mode 100644 src/data/MOCKDATA.js
+ create mode 100644 src/index.js
+ create mode 100644 src/router/.gitkeep
+ create mode 100644 src/styles/index.css
+ create mode 100644 src/utils/.gitkeep
+ create mode 100644 src/utils/about-section.js
+ create mode 100644 src/utils/projects-section.js
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git remote add origin https://github.com/Franklin-borda/portafolio.git
+error: remote origin already exists.
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Franklin-borda/portafolio.git
+  Push  URL: https://github.com/Franklin-borda/portafolio.git
+  HEAD branch: (unknown)
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git branch -M master
+
+51932@DELIA MINGW64 ~/Desktop/portafolio (master)
+$ git push -u origin master
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (31/31), 2.14 MiB | 425.00 KiB/s, done.
+Total 31 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Franklin-borda/portafolio.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
